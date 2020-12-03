@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/labelLocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Local"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:padding="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_negative_local"
+            android:layout_below="@id/labelLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="14sp"
+            android:text="-1"
+            android:layout_marginStart="20sp" />
+
+        <TextView
+            android:id="@+id/scorelocal"
+            android:layout_toRightOf="@id/btn_negative_local"
+            android:layout_toEndOf="@id/btn_negative_local"
+            android:layout_below="@id/labelLocal"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:text="0"
+            android:inputType="number"
+            android:textSize="40sp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_one_local"
+            android:layout_below="@id/labelLocal"
+            android:layout_toRightOf="@id/scorelocal"
+            android:layout_toEndOf="@id/scorelocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="14sp"
+            android:text="+1"
+            android:layout_marginStart="14sp" />
+
+        <Button
+            android:id="@+id/btn_two_local"
+            android:layout_below="@id/btn_one_local"
+            android:layout_toRightOf="@id/scorelocal"
+            android:layout_toEndOf="@id/scorelocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14sp"
+            android:text="+2"
+            android:layout_marginStart="14sp" />
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_below="@id/btn_negative_local"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="14sp"
+            android:layout_marginBottom="60sp"
+            app:icon="@drawable/ic_refresh"
+            android:height="74dp"
+            app:iconSize="38dp"
+            android:layout_marginStart="20sp" />
+
+        <ImageView
+            android:id="@+id/image_ball"
+            android:layout_toRightOf="@id/btn_reset"
+            android:layout_toEndOf="@id/btn_reset"
+            android:layout_below="@id/scorelocal"
+            android:layout_marginTop="50dp"
+            android:layout_width="230dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ball"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_below="@id/btn_negative_local"
+            android:layout_toRightOf="@id/image_ball"
+            android:layout_toEndOf="@id/image_ball"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            app:icon="@drawable/ic_next"
+            app:iconSize="38dp"
+            android:height="74dp" />
+
+
+        <Button
+            android:id="@+id/btn_negative_visit"
+            android:layout_below="@id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="14sp"
+            android:text="-1"
+            android:layout_marginStart="20sp" />
+
+        <TextView
+            android:id="@+id/scorevisit"
+            android:layout_toRightOf="@id/btn_negative_local"
+            android:layout_toEndOf="@id/btn_negative_local"
+            android:layout_below="@id/btn_reset"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:text="0"
+            android:inputType="number"
+            android:textSize="40sp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_one_visit"
+            android:layout_below="@id/btn_reset"
+            android:layout_toRightOf="@id/scorevisit"
+            android:layout_toEndOf="@id/scorevisit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="14sp"
+            android:text="+1"
+            android:layout_marginStart="14sp" />
+
+        <Button
+            android:id="@+id/btn_two_visit"
+            android:layout_below="@id/btn_one_visit"
+            android:layout_toRightOf="@id/scorevisit"
+            android:layout_toEndOf="@id/scorevisit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14sp"
+            android:text="+2"
+            android:layout_marginStart="14sp" />
+
+
+        <TextView
+            android:id="@+id/labelvisit"
+            android:layout_below="@id/scorevisit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visita"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:padding="8sp" />
+
+    </RelativeLayout>
+</layout>
